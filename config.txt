@@ -1,0 +1,11 @@
+{
+   "postgres_test" : {
+   "db_server_type"  : "postgresql",
+   "db_name"  : "my_db",
+   "host"     : "localhost",
+   "user"     : "postgres",
+   "password" : "anypass",
+   "port"     : 5432
+   }
+
+}
