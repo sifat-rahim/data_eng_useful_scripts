@@ -1,0 +1,6 @@
+pg_dump -h 172.yy.yy.yy -d <db_name> -U <db_user> --port 5432 --no-owner --no-acl --encoding='UTF-8' > /tmp/<db_table_dump>.sql 
+
+
+# Copy data from CSV file to table
+\COPY missing_customer from '/tmp/missing_customer_ids.csv' DELIMITER ',' CSV HEADER ; -- if the first row is header
+\COPY missing_customer from '/tmp/missing_customer_ids.csv' DELIMITER ',' CSV ; -- if no header exists (all rows are data rows)
